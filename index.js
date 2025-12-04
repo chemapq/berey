@@ -15,10 +15,17 @@ function openModal(element, index) {
 
 function closeModal(event) {
   // Verifica si el clic fue en el fondo de la modal o en la "X"
-  if (event.target.id === 'planoModal' || event.target.tagName === 'SPAN') {
+  const target = event.target;
+  const clickedOnPlanoModal = target.id === 'planoModal';
+  const clickedOnImageModal = target.id === 'imageModal';
+  const clickedOnCloseButton = target.classList.contains('modal-close');
+
+  if (clickedOnPlanoModal || (clickedOnCloseButton && document.getElementById('planoModal').classList.contains('hidden') === false)) {
     document.getElementById('planoModal').classList.add('hidden');
     document.removeEventListener('keydown', handleViviendaCloseKeydown);
-  } else if (event.target.id === 'imageModal' || event.target.tagName === 'SPAN') {
+  }
+
+  if (clickedOnImageModal || (clickedOnCloseButton && document.getElementById('imageModal').classList.contains('hidden') === false)) {
     document.getElementById('imageModal').classList.add('hidden');
     document.removeEventListener('keydown', handleKeydown);
   }
