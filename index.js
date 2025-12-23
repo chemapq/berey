@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
       header.classList.remove('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/90');
       headerTitle.classList.add('text-white');
       headerTitle.classList.remove('text-black');
-      headerTitle.src = '/content/iconos/berey-blanco.webp';
+      headerTitle.src = '/content/iconos/berey-blanco.png';
       if (headerNav) {
         headerNav.querySelectorAll('a').forEach(link => {
           link.classList.add('text-white');
