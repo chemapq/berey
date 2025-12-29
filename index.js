@@ -1,8 +1,12 @@
 const images = [
-  "/content/full/imagenes/DEF_2020_12_26__04-Interior-01-scaled (1).webp",
-  "/content/full/imagenes/DEF_2020_12_26__05-Interior-02-scaled (1).webp",
-  "/content/full/imagenes/DEF_2020_12_26__04-Interior-03-scaled (1).webp",
-  "/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled (3).webp"
+  "/content/full/imagenes/DEF_2020_12_26__04-Interior-01-scaled-(1).webp",
+  "/content/full/imagenes/DEF_2020_12_26__05-Interior-02-scaled-(1).webp",
+  "/content/full/imagenes/DEF_2020_12_26__04-Interior-03-scaled-(1).webp",
+  "/content/full/imagenes/VISTA-ESQUINA-CALIDAD-INTERNET-scaled-(3).webp",
+  "/content/full/imagenes/APART-2-1.webp",
+  "/content/full/imagenes/APART-2-2.webp",
+  "/content/full/imagenes/APART-2-4.webp",
+  "/content/full/imagenes/APART-2-5.webp"
 ];
 let currentIndex = 0;
 
