@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
-      header.classList.add('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/90');
+      header.classList.add('bg-background', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background');
       headerTitle.classList.remove('text-white');
       headerTitle.classList.add('text-black');
       headerTitle.src = '/content/iconos/berey.png';
@@ -180,10 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     } else {
-      header.classList.remove('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/90');
+      header.classList.remove('bg-background', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background');
       headerTitle.classList.add('text-white');
       headerTitle.classList.remove('text-black');
-      headerTitle.src = '/content/iconos/berey-blanco.png';
+      headerTitle.src = '/content/iconos/berey.png';
       if (headerNav) {
         headerNav.querySelectorAll('a').forEach(link => {
           link.classList.add('text-white');
